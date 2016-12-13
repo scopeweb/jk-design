@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1481301702,
-    'checksum' => '0d434ee9035e1042074d5a1125232f8a',
+    'timestamp' => 1481661115,
+    'checksum' => '7d9907068a692d50826737413aef95ab',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1481292597
+                'modified' => 1481309755
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
@@ -63,7 +63,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1478538864
+                'modified' => 1481307387
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -138,17 +138,17 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'noreply@blu3monkey.com',
-                'from_name' => 'JK-design.me',
+                'from' => 'youngwebrebels@gmail.com',
+                'from_name' => 'YoungWebRebelz',
                 'to' => 'stephan@moerman.cc',
-                'to_name' => 'test',
+                'to_name' => 'stephan',
                 'mailer' => [
-                    'engine' => 'smtp',
+                    'engine' => 'mail',
                     'smtp' => [
-                        'server' => 'smtp.zoho.com',
+                        'server' => 'smtp.gmail.com',
                         'port' => 465,
                         'encryption' => 'ssl',
-                        'user' => 'beheerder',
+                        'user' => 'youngwebrebels@gmail.com',
                         'password' => 'Pandora!5'
                     ],
                     'sendmail' => [
@@ -156,7 +156,7 @@ return [
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => true
+                'debug' => false
             ],
             'error' => [
                 'enabled' => true,
