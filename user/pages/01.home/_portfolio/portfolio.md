@@ -9,7 +9,6 @@ portfolios:
       img: app1.png
       thumbnail: app1-thumbnail.png
       alt: image-alt
-      description: Project description here
     - title: Balloon
       subtitle: Branding design
       layout: default
@@ -17,7 +16,6 @@ portfolios:
       img: app2.png
       thumbnail: app2-thumbnail.png
       alt: image-alt
-      description: Project description here
     - title: Find your pet
       subtitle: Logo Design
       layout: default
@@ -25,7 +23,6 @@ portfolios:
       img: app3.png
       thumbnail: app3-thumbnail.png
       alt: image-alt
-      description: Project description here
     - title: Tie
       subtitle: Branding & Web Design
       layout: default
@@ -33,7 +30,6 @@ portfolios:
       img: app4.png
       thumbnail: app4-thumbnail.png
       alt: image-alt
-      description: Project description here
     - title: Dreamwave
       subtitle: Logo Design
       layout: default
@@ -41,7 +37,6 @@ portfolios:
       img: app5.png
       thumbnail: app5-thumbnail.png
       alt: image-alt
-      description: Project description here.
     - title: Fantasia Cafe
       subtitle: Graphic Design
       layout: default
@@ -49,7 +44,6 @@ portfolios:
       img: app6.png
       thumbnail: app6-thumbnail.png
       alt: image-alt
-      description: Project description here.
     - title: Title Here
       subtitle: Graphic Design
       layout: default
@@ -57,7 +51,6 @@ portfolios:
       img: app7.png
       thumbnail: app7-thumbnail.png
       alt: image-alt
-      description: Project description here.  
     - title: Title Here
       subtitle: Graphic Design
       layout: default
@@ -65,7 +58,6 @@ portfolios:
       img: app8.png
       thumbnail: app8-thumbnail.png
       alt: image-alt
-      description: Project description here.             
     - title: Title Here
       subtitle: Graphic Design
       layout: default
@@ -73,7 +65,6 @@ portfolios:
       img: app9.png
       thumbnail: app9-thumbnail.png
       alt: image-alt
-      description: Project description here.                   
 ---
 
 ## Portfolio
