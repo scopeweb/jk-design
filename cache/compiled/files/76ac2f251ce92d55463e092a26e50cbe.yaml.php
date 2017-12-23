@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/mnt/c/programming/web/jkdesign/user/config/site.yaml',
-    'modified' => 1514039487,
+    'modified' => 1514055190,
     'data' => [
         'title' => 'JK-Design',
         'author' => [
@@ -47,7 +47,7 @@ return [
         'social' => [
             0 => [
                 'title' => 'facebook',
-                'url' => 'https://facebook.com/jk.design.nn'
+                'url' => 'https://facebook.com/jk.design.nu'
             ],
             1 => [
                 'title' => 'instagram',

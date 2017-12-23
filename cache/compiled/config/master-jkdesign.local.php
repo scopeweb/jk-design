@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1514043173,
-    'checksum' => '76e633b106c710eaa9e991cdba349f1f',
+    'timestamp' => 1514055898,
+    'checksum' => '1572f2d12fc95af765a17ca51df8d8f7',
     'files' => [
         'user/config' => [
             'media' => [
@@ -27,7 +27,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1514039487
+                'modified' => 1514055190
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -618,7 +618,7 @@ return [
             'social' => [
                 0 => [
                     'title' => 'facebook',
-                    'url' => 'https://facebook.com/jk.design.nn'
+                    'url' => 'https://facebook.com/jk.design.nu'
                 ],
                 1 => [
                     'title' => 'instagram',

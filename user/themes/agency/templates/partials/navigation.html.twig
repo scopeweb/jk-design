@@ -30,6 +30,16 @@
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+                <li>
+                    <a href="{{ base_url }}/pl">
+                        <img src="{{ url('theme://img/flags/flag-poland.png') }}" alt="langswitcher PL">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ base_url }}/en">
+                        <img src="{{ url('theme://img/flags/flag-english.png') }}" alt="langswitcher EN">
+                    </a>
+                </li>
                 {% else %}
                 <li>
                     <a class="page-scroll" href="#services">Oferta</a>
@@ -42,6 +52,16 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Kontakt</a>
+                </li>
+                <li>
+                    <a href="{{ base_url }}/en">
+                        <img src="{{ url('theme://img/flags/flag-english.png') }}" alt="langswitcher EN">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ base_url }}/pl">
+                        <img src="{{ url('theme://img/flags/flag-poland.png') }}" alt="langswitcher PL">
+                    </a>
                 </li>
                 {% endif %}
             </ul>

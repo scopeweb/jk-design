@@ -51,9 +51,31 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                 <li>
                     <a class=\"page-scroll\" href=\"#contact\">Contact</a>
                 </li>
+                <li>
+                    <a href=\"";
+            // line 34
+            echo ($context["base_url"] ?? null);
+            echo "/pl\">
+                        <img src=\"";
+            // line 35
+            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-poland.png");
+            echo "\" alt=\"langswitcher PL\">
+                    </a>
+                </li>
+                <li>
+                    <a href=\"";
+            // line 39
+            echo ($context["base_url"] ?? null);
+            echo "/en\">
+                        <img src=\"";
+            // line 40
+            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-english.png");
+            echo "\" alt=\"langswitcher EN\">
+                    </a>
+                </li>
                 ";
         } else {
-            // line 34
+            // line 44
             echo "                <li>
                     <a class=\"page-scroll\" href=\"#services\">Oferta</a>
                 </li>
@@ -66,9 +88,31 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                 <li>
                     <a class=\"page-scroll\" href=\"#contact\">Kontakt</a>
                 </li>
+                <li>
+                    <a href=\"";
+            // line 57
+            echo ($context["base_url"] ?? null);
+            echo "/en\">
+                        <img src=\"";
+            // line 58
+            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-english.png");
+            echo "\" alt=\"langswitcher EN\">
+                    </a>
+                </li>
+                <li>
+                    <a href=\"";
+            // line 62
+            echo ($context["base_url"] ?? null);
+            echo "/pl\">
+                        <img src=\"";
+            // line 63
+            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-poland.png");
+            echo "\" alt=\"langswitcher PL\">
+                    </a>
+                </li>
                 ";
         }
-        // line 47
+        // line 67
         echo "            </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -90,7 +134,7 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
 
     public function getDebugInfo()
     {
-        return array (  72 => 47,  57 => 34,  42 => 21,  40 => 20,  19 => 1,);
+        return array (  116 => 67,  109 => 63,  105 => 62,  98 => 58,  94 => 57,  79 => 44,  72 => 40,  68 => 39,  61 => 35,  57 => 34,  42 => 21,  40 => 20,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -135,6 +179,16 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                 <li>
                     <a class=\"page-scroll\" href=\"#contact\">Contact</a>
                 </li>
+                <li>
+                    <a href=\"{{ base_url }}/pl\">
+                        <img src=\"{{ url('theme://img/flags/flag-poland.png') }}\" alt=\"langswitcher PL\">
+                    </a>
+                </li>
+                <li>
+                    <a href=\"{{ base_url }}/en\">
+                        <img src=\"{{ url('theme://img/flags/flag-english.png') }}\" alt=\"langswitcher EN\">
+                    </a>
+                </li>
                 {% else %}
                 <li>
                     <a class=\"page-scroll\" href=\"#services\">Oferta</a>
@@ -147,6 +201,16 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                 </li>
                 <li>
                     <a class=\"page-scroll\" href=\"#contact\">Kontakt</a>
+                </li>
+                <li>
+                    <a href=\"{{ base_url }}/en\">
+                        <img src=\"{{ url('theme://img/flags/flag-english.png') }}\" alt=\"langswitcher EN\">
+                    </a>
+                </li>
+                <li>
+                    <a href=\"{{ base_url }}/pl\">
+                        <img src=\"{{ url('theme://img/flags/flag-poland.png') }}\" alt=\"langswitcher PL\">
+                    </a>
                 </li>
                 {% endif %}
             </ul>
