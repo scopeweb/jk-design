@@ -2,18 +2,31 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/mnt/c/programming/web/jkdesign/user/plugins/login/login.yaml',
-    'modified' => 1514039488,
+    'modified' => 1514043019,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,
         'route' => NULL,
-        'route_register' => false,
+        'redirect_to_login' => true,
+        'redirect_after_login' => NULL,
         'route_activate' => '/activate_user',
         'route_forgot' => '/forgot_password',
         'route_reset' => '/reset_password',
-        'redirect_after_login' => NULL,
+        'route_profile' => '/user_profile',
+        'route_register' => '/user_register',
+        'route_unauthorized' => '/user_unauthorized',
+        'dynamic_page_visibility' => false,
         'parent_acl' => false,
         'protect_protected_page_media' => false,
+        'rememberme' => [
+            'enabled' => true,
+            'timeout' => 604800,
+            'name' => 'grav-rememberme'
+        ],
+        'max_pw_resets_count' => 0,
+        'max_pw_resets_interval' => 60,
+        'max_login_count' => 0,
+        'max_login_interval' => 2,
         'user_registration' => [
             'enabled' => true,
             'fields' => [
@@ -21,13 +34,18 @@ return [
                 1 => 'password',
                 2 => 'email',
                 3 => 'fullname',
-                4 => 'title'
+                4 => 'title',
+                5 => 'level'
+            ],
+            'default_values' => [
+                'level' => 'Newbie'
             ],
             'access' => [
                 'site' => [
                     'login' => 'true'
                 ]
             ],
+            'redirect_after_registration' => '',
             'options' => [
                 'validate_password1_and_password2' => true,
                 'set_user_disabled' => false,
@@ -36,11 +54,6 @@ return [
                 'send_notification_email' => false,
                 'send_welcome_email' => false
             ]
-        ],
-        'rememberme' => [
-            'enabled' => true,
-            'timeout' => 604800,
-            'name' => 'grav-rememberme'
         ]
     ]
 ];

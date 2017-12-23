@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/mnt/c/programming/web/jkdesign/system/blueprints/config/site.yaml',
-    'modified' => 1514039484,
+    'modified' => 1514042947,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SITE',
         'form' => [
@@ -19,6 +19,13 @@ return [
                             'size' => 'large',
                             'placeholder' => 'PLUGIN_ADMIN.SITE_TITLE_PLACEHOLDER',
                             'help' => 'PLUGIN_ADMIN.SITE_TITLE_HELP'
+                        ],
+                        'default_lang' => [
+                            'type' => 'text',
+                            'label' => 'PLUGIN_ADMIN.SITE_DEFAULT_LANG',
+                            'size' => 'x-small',
+                            'placeholder' => 'PLUGIN_ADMIN.SITE_DEFAULT_LANG_PLACEHOLDER',
+                            'help' => 'PLUGIN_ADMIN.SITE_DEFAULT_LANG_HELP'
                         ],
                         'author.name' => [
                             'type' => 'text',

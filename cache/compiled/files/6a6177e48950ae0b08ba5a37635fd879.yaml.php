@@ -2,9 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/mnt/c/programming/web/jkdesign/system/config/site.yaml',
-    'modified' => 1514039484,
+    'modified' => 1514042947,
     'data' => [
         'title' => 'Grav',
+        'default_lang' => 'en',
         'author' => [
             'name' => 'John Appleseed',
             'email' => 'john@email.com'

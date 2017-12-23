@@ -31,10 +31,6 @@
     {% block content %}{% endblock %}
   {% endblock %}
 
-  {% block footer %}
-    {% include 'partials/footer.html.twig' %}
-  {% endblock %}
-
   {% block javascripts_bottom %}
     {% do assets.add('jquery',101) %}
     {% do assets.addJs('theme://js/bootstrap.min.js',100) %}

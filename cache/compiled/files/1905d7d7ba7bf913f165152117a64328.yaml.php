@@ -2,19 +2,27 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/mnt/c/programming/web/jkdesign/user/config/system.yaml',
-    'modified' => 1514041608,
+    'modified' => 1514043172,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',
         'wrapped_site' => false,
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
+        'force_lowercase_urls' => true,
+        'username_regex' => '^[a-z0-9_-]{3,16}$',
+        'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
+        'intl_enabled' => true,
         'languages' => [
+            'supported' => [
+                0 => 'en',
+                1 => 'pl'
+            ],
             'include_default_lang' => true,
             'translations' => true,
             'translations_fallback' => true,
-            'session_store_active' => false,
-            'http_accept_language' => false,
+            'session_store_active' => true,
+            'http_accept_language' => true,
             'override_locale' => false
         ],
         'home' => [
@@ -40,6 +48,7 @@ return [
                 'twig' => true
             ],
             'twig_first' => false,
+            'never_cache_twig' => false,
             'events' => [
                 'page' => true,
                 'twig' => true
@@ -94,8 +103,11 @@ return [
             ],
             'driver' => 'auto',
             'prefix' => 'g',
+            'clear_images_by_default' => true,
+            'cli_compatibility' => false,
             'lifetime' => 604800,
-            'gzip' => false
+            'gzip' => true,
+            'allow_webserver_gzip' => true
         ],
         'twig' => [
             'cache' => true,
@@ -127,7 +139,7 @@ return [
             'log' => true
         ],
         'debugger' => [
-            'enabled' => true,
+            'enabled' => false,
             'shutdown' => [
                 'close_connection' => true
             ],
@@ -142,7 +154,8 @@ return [
         ],
         'media' => [
             'enable_media_timestamp' => false,
-            'upload_limit' => 0
+            'auto_metadata_exif' => false,
+            'upload_limit' => 2097152
         ],
         'session' => [
             'enabled' => true,
@@ -155,7 +168,8 @@ return [
         'gpm' => [
             'releases' => 'stable',
             'method' => 'auto',
-            'verify_peer' => true
+            'verify_peer' => true,
+            'official_gpm_only' => true
         ]
     ]
 ];

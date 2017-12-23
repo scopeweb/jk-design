@@ -54,6 +54,8 @@ abstract class Minify
      * Add a file or straight-up code to be minified.
      *
      * @param string|string[] $data
+     *
+     * @return static
      */
     public function add($data /* $data = null, ... */)
     {
@@ -84,6 +86,8 @@ abstract class Minify
             // store data
             $this->data[$key] = $value;
         }
+
+        return $this;
     }
 
     /**
@@ -320,12 +324,13 @@ abstract class Minify
      * via restoreStrings().
      *
      * @param string[optional] $chars
+     * @param string[optional] $placeholderPrefix
      */
-    protected function extractStrings($chars = '\'"')
+    protected function extractStrings($chars = '\'"', $placeholderPrefix = '')
     {
         // PHP only supports $this inside anonymous functions since 5.4
         $minifier = $this;
-        $callback = function ($match) use ($minifier) {
+        $callback = function ($match) use ($minifier, $placeholderPrefix) {
             // check the second index here, because the first always contains a quote
             if ($match[2] === '') {
                 /*
@@ -338,7 +343,7 @@ abstract class Minify
             }
 
             $count = count($minifier->extracted);
-            $placeholder = $match[1].$count.$match[1];
+            $placeholder = $match[1].$placeholderPrefix.$count.$match[1];
             $minifier->extracted[$placeholder] = $match[1].$match[2].$match[1];
 
             return $placeholder;
