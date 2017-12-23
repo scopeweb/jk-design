@@ -4,7 +4,7 @@ menu: O Mnie
 jakub:
     -
         img: jakub.jpg
-        description: Wtam! Jestem Jakub, 20 letni student informatyki. <br> Jestem samoukiem, który jest zmotywowany do poznawania nowej wiedzy. <br> Całą posiadaną przeze mnie wiedzę zdobyłem przez niezliczoną ilość nauki i motywacji by stać się lepszy. <br> Moje usługi obejmują branding, grafikę i inne rodzaje projektów 2D, ale cały mój wolny czas <br> poświęcam nauce nowych rzeczy takich jak grafika 3D i grafika ruchoma.
+        description: Witam! Jestem Jakub, 20 letni student informatyki. <br> Jestem samoukiem, który jest zmotywowany do poznawania nowej wiedzy. <br> Całą posiadaną przeze mnie wiedzę zdobyłem przez niezliczoną ilość nauki i motywacji by stać się lepszy. <br> Moje usługi obejmują branding, grafikę i inne rodzaje projektów 2D, ale cały mój wolny czas <br> poświęcam nauce nowych rzeczy takich jak grafika 3D i grafika ruchoma.
 
 abouts:
     -

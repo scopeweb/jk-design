@@ -2,12 +2,12 @@
 title: Contact Us
 form:
     -
-        namefield: Name
-        placeholdername: Enter your name
+        namefield: Imię i Nazwisko
+        placeholdername: Wpisz imię i nazwisko
         emailfield: Email
-        placeholderemail: Enter your email address
-        messagefield: Messages
-        placeholdermsg: Enter your message
+        placeholderemail: Wpisz swój e-mail
+        messagefield: Wiadomość
+        placeholdermsg: Wpisz swoją wiadomość
         btn: Submit
 ---
 

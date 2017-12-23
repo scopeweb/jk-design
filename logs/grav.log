@@ -1027,3 +1027,5 @@
 [2017-12-23 19:21:33] grav.WARNING: Plugin 'gffi' enabled but not found! Try clearing cache with `bin/grav clear-cache` [] []
 [2017-12-23 19:21:33] grav.WARNING: Plugin 'gffi' enabled but not found! Try clearing cache with `bin/grav clear-cache` [] []
 [2017-12-23 19:21:38] grav.WARNING: Plugin 'gffi' enabled but not found! Try clearing cache with `bin/grav clear-cache` [] []
+[2017-12-23 19:28:17] grav.WARNING: Plugin 'gffi' enabled but not found! Try clearing cache with `bin/grav clear-cache` [] []
+[2017-12-23 19:47:49] grav.WARNING: Plugin 'gffi' enabled but not found! Try clearing cache with `bin/grav clear-cache` [] []
