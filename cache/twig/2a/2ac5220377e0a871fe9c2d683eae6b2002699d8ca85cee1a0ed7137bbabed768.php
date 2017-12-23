@@ -113,6 +113,6 @@ class __TwigTemplate_7279336cea4652c1a09b5eb5c9c398bf48e6c617e5ed49704ff7e0666e9
         {{ module.content }}
     {% endfor %}
 {% endblock %}
-", "modular.html.twig", "/home/grav/www/html/user/themes/agency/templates/modular.html.twig");
+", "modular.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/modular.html.twig");
     }
 }

@@ -27,227 +27,85 @@ class __TwigTemplate_b7d047dcaa57beccf81ea38e04f6b723b9cfb531c2cb35ea5b4b16bcaa5
         </div>
     </div>
     <div class=\"row\">
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal1\" class=\"portfolio-link\" data-toggle=\"modal\">
+        ";
+        // line 9
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "portfolios", array()));
+        $context['loop'] = array(
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        );
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
+        foreach ($context['_seq'] as $context["_key"] => $context["portfolio"]) {
+            // line 10
+            echo "            <div class=\"col-md-4 col-sm-6 portfolio-item\">
+                <a href=\"#portfolioModal";
+            // line 11
+            echo $this->getAttribute($context["portfolio"], "modalid", array());
+            echo "\" class=\"portfolio-link\" data-toggle=\"modal\">
                     <div class=\"portfolio-hover\">
                         <div class=\"portfolio-hover-content\">
                             <i class=\"fa fa-plus fa-3x\"></i>
                         </div>
                     </div>
-                    <img src=\"user/pages/01.home/_portfolio/Mount_login-thumbnail.png\" class=\"img-responsive\" alt=\"\">
+                    <img src=\"";
+            // line 17
+            echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["portfolio"], "thumbnail", array()), array(), "array"), "url", array());
+            echo "\" class=\"img-responsive\" alt=\"\">
                 </a>
                 <div class=\"portfolio-caption\">
-                    <h4>Mount - login panel</h4>
+                    <h4>";
+            // line 20
+            echo $this->getAttribute($context["portfolio"], "title", array());
+            echo "</h4>
                     <p class=\"text-muted\">";
-        // line 20
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
+            // line 21
+            echo $this->getAttribute($context["portfolio"], "subtitle", array());
+            echo "</p>
                 </div>
             </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal2\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app2-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Balloon - logo & business card</h4>
-                    <p class=\"text-muted\">";
-        // line 34
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal3\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app3-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Find your pet - logo</h4>
-                    <p class=\"text-muted\">";
-        // line 48
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-    </div>
-    <div class=\"row\">
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal4\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app5-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Dreamwave - business card</h4>
-                    <p class=\"text-muted\">";
-        // line 64
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal5\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app6-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Fantasia Cafe - logo</h4>
-                    <p class=\"text-muted\">";
-        // line 78
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal6\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app7-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Golden Lotus - logo</h4>
-                    <p class=\"text-muted\">";
-        // line 92
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-    </div>
-    <div class=\"row\">
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal7\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app8-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Whaleship - Logo</h4>
-                    <p class=\"text-muted\">";
-        // line 108
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal8\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app9-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Ola - lowpoly portrait</h4>
-                    <p class=\"text-muted\">";
-        // line 122
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal9\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/W-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>W - esport logo</h4>
-                    <p class=\"text-muted\">";
-        // line 136
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-    </div>
-    <div class=\"row\">
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal10\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/Amon_logo-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Amon Beats - DJ banner</h4>
-                    <p class=\"text-muted\">";
-        // line 152
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal11\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/Amon_banner-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Amon Beats - DJ logo</h4>
-                    <p class=\"text-muted\">";
-        // line 166
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal12\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/Kami-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>O-Kami Sushi - logo</h4>
-                    <p class=\"text-muted\">";
-        // line 180
-        echo $this->getAttribute(($context["portfolio"] ?? null), "subtitle", array());
-        echo "</p>
-                </div>
-            </div>
-    </div>
+        ";
+            // line 24
+            if (((0 == $this->getAttribute($context["loop"], "index", array()) % 3) &&  !$this->getAttribute($context["loop"], "last", array()))) {
+                // line 25
+                echo "        </div>
+        <div class=\"row\">
+        ";
+            }
+            // line 28
+            echo "        ";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['portfolio'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 29
+        echo "    </div>
 </div>
 </section>
 
 
  ";
-        // line 188
+        // line 34
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "portfolios", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["portfolio"]) {
-            // line 189
+            // line 35
             echo "    <div class=\"portfolio-modal modal fade\" id=\"portfolioModal";
             echo $this->getAttribute($context["portfolio"], "modalid", array());
             echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
@@ -263,22 +121,20 @@ class __TwigTemplate_b7d047dcaa57beccf81ea38e04f6b723b9cfb531c2cb35ea5b4b16bcaa5
                     <div class=\"col-lg-8 col-lg-offset-2\">
                         <div class=\"modal-body\">
                             <h2>";
-            // line 201
+            // line 47
             echo $this->getAttribute($context["portfolio"], "title", array());
             echo "</h2>
                             <hr class=\"star-primary\">
                             <img src=\"";
-            // line 203
+            // line 49
             echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["portfolio"], "img", array()), array(), "array"), "url", array());
             echo "\" class=\"img-responsive img-centered\" alt=\"";
             echo $this->getAttribute($context["portfolio"], "alt", array());
             echo "\">
                             <p>";
-            // line 204
+            // line 50
             echo $this->getAttribute($context["portfolio"], "description", array());
             echo "</p>
-                            <ul class=\"list-inline item-details\">
-                            </ul>
                             <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\"><i class=\"fa fa-times\"></i> Close</button>
                         </div>
                     </div>
@@ -305,7 +161,7 @@ class __TwigTemplate_b7d047dcaa57beccf81ea38e04f6b723b9cfb531c2cb35ea5b4b16bcaa5
 
     public function getDebugInfo()
     {
-        return array (  278 => 204,  272 => 203,  267 => 201,  251 => 189,  247 => 188,  236 => 180,  219 => 166,  202 => 152,  183 => 136,  166 => 122,  149 => 108,  130 => 92,  113 => 78,  96 => 64,  77 => 48,  60 => 34,  43 => 20,  25 => 5,  19 => 1,);
+        return array (  136 => 50,  130 => 49,  125 => 47,  109 => 35,  105 => 34,  98 => 29,  84 => 28,  79 => 25,  77 => 24,  71 => 21,  67 => 20,  61 => 17,  52 => 11,  49 => 10,  32 => 9,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -326,180 +182,26 @@ class __TwigTemplate_b7d047dcaa57beccf81ea38e04f6b723b9cfb531c2cb35ea5b4b16bcaa5
         </div>
     </div>
     <div class=\"row\">
+        {% for portfolio in page.header.portfolios %}
             <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal1\" class=\"portfolio-link\" data-toggle=\"modal\">
+                <a href=\"#portfolioModal{{ portfolio.modalid }}\" class=\"portfolio-link\" data-toggle=\"modal\">
                     <div class=\"portfolio-hover\">
                         <div class=\"portfolio-hover-content\">
                             <i class=\"fa fa-plus fa-3x\"></i>
                         </div>
                     </div>
-                    <img src=\"user/pages/01.home/_portfolio/Mount_login-thumbnail.png\" class=\"img-responsive\" alt=\"\">
+                    <img src=\"{{ page.media[portfolio.thumbnail].url }}\" class=\"img-responsive\" alt=\"\">
                 </a>
                 <div class=\"portfolio-caption\">
-                    <h4>Mount - login panel</h4>
+                    <h4>{{ portfolio.title }}</h4>
                     <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
                 </div>
             </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal2\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app2-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Balloon - logo & business card</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal3\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app3-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Find your pet - logo</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-    </div>
-    <div class=\"row\">
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal4\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app5-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Dreamwave - business card</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal5\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app6-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Fantasia Cafe - logo</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal6\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app7-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Golden Lotus - logo</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-    </div>
-    <div class=\"row\">
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal7\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app8-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Whaleship - Logo</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal8\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/app9-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Ola - lowpoly portrait</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal9\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/W-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>W - esport logo</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-    </div>
-    <div class=\"row\">
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal10\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/Amon_logo-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Amon Beats - DJ banner</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal11\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/Amon_banner-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>Amon Beats - DJ logo</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
-                <a href=\"#portfolioModal12\" class=\"portfolio-link\" data-toggle=\"modal\">
-                    <div class=\"portfolio-hover\">
-                        <div class=\"portfolio-hover-content\">
-                            <i class=\"fa fa-plus fa-3x\"></i>
-                        </div>
-                    </div>
-                    <img src=\"user/pages/01.home/_portfolio/Kami-thumbnail.png\" class=\"img-responsive\" alt=\"\">
-                </a>
-                <div class=\"portfolio-caption\">
-                    <h4>O-Kami Sushi - logo</h4>
-                    <p class=\"text-muted\">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
+        {% if loop.index is divisible by(3) and not loop.last %}
+        </div>
+        <div class=\"row\">
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
 </section>
@@ -522,8 +224,6 @@ class __TwigTemplate_b7d047dcaa57beccf81ea38e04f6b723b9cfb531c2cb35ea5b4b16bcaa5
                             <hr class=\"star-primary\">
                             <img src=\"{{ page.media[portfolio.img].url }}\" class=\"img-responsive img-centered\" alt=\"{{ portfolio.alt }}\">
                             <p>{{ portfolio.description }}</p>
-                            <ul class=\"list-inline item-details\">
-                            </ul>
                             <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\"><i class=\"fa fa-times\"></i> Close</button>
                         </div>
                     </div>
@@ -531,7 +231,6 @@ class __TwigTemplate_b7d047dcaa57beccf81ea38e04f6b723b9cfb531c2cb35ea5b4b16bcaa5
             </div>
         </div>
     </div>
-{% endfor %}
-", "modular/portfolio.html.twig", "/home/grav/www/html/user/themes/agency/templates/modular/portfolio.html.twig");
+{% endfor %}", "modular/portfolio.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/modular/portfolio.html.twig");
     }
 }

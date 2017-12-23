@@ -6,180 +6,26 @@
         </div>
     </div>
     <div class="row">
+        {% for portfolio in page.header.portfolios %}
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <a href="#portfolioModal{{ portfolio.modalid }}" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="user/pages/01.home/_portfolio/Mount_login-thumbnail.png" class="img-responsive" alt="">
+                    <img src="{{ page.media[portfolio.thumbnail].url }}" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Mount - login panel</h4>
+                    <h4>{{ portfolio.title }}</h4>
                     <p class="text-muted">{{ portfolio.subtitle }}</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/app2-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Balloon - logo & business card</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/app3-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Find your pet - logo</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-    </div>
-    <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/app5-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Dreamwave - business card</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/app6-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Fantasia Cafe - logo</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/app7-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Golden Lotus - logo</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-    </div>
-    <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/app8-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Whaleship - Logo</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/app9-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Ola - lowpoly portrait</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/W-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>W - esport logo</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-    </div>
-    <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/Amon_logo-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Amon Beats - DJ banner</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/Amon_banner-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Amon Beats - DJ logo</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="user/pages/01.home/_portfolio/Kami-thumbnail.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>O-Kami Sushi - logo</h4>
-                    <p class="text-muted">{{ portfolio.subtitle }}</p>
-                </div>
-            </div>
+        {% if loop.index is divisible by(3) and not loop.last %}
+        </div>
+        <div class="row">
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
 </section>
@@ -202,8 +48,6 @@
                             <hr class="star-primary">
                             <img src="{{ page.media[portfolio.img].url }}" class="img-responsive img-centered" alt="{{ portfolio.alt }}">
                             <p>{{ portfolio.description }}</p>
-                            <ul class="list-inline item-details">
-                            </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>

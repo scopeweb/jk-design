@@ -147,6 +147,6 @@ class __TwigTemplate_2fe0f31e6b8bd9cbbc6f025ae896d59075ad01f741dfe8dc0c7cbc217a7
                 </div>
                 <!-- /.container-fluid -->
             </nav>
-", "partials/navigation.html.twig", "/home/grav/www/html/user/themes/agency/templates/partials/navigation.html.twig");
+", "partials/navigation.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/partials/navigation.html.twig");
     }
 }

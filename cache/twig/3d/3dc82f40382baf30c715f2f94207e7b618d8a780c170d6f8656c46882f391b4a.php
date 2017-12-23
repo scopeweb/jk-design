@@ -23,7 +23,7 @@ class __TwigTemplate_a243b63a9da96565d4f7eceb4a5f7bb04d84d07a1e74c6674f17b141fea
                 <span class=\"copyright\">Copyright &copy; ";
         // line 5
         echo $this->getAttribute(($context["site"] ?? null), "title", array());
-        echo " 2016</span>
+        echo " <script type=\"text/javascript\"> document.write(new Date().getFullYear()); </script></span>
             </div>
             <div class=\"col-md-4\">
                 <ul class=\"list-inline social-buttons\">
@@ -104,7 +104,7 @@ class __TwigTemplate_a243b63a9da96565d4f7eceb4a5f7bb04d84d07a1e74c6674f17b141fea
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-md-4\">
-                <span class=\"copyright\">Copyright &copy; {{ site.title }} 2016</span>
+                <span class=\"copyright\">Copyright &copy; {{ site.title }} <script type=\"text/javascript\"> document.write(new Date().getFullYear()); </script></span>
             </div>
             <div class=\"col-md-4\">
                 <ul class=\"list-inline social-buttons\">
@@ -125,6 +125,6 @@ class __TwigTemplate_a243b63a9da96565d4f7eceb4a5f7bb04d84d07a1e74c6674f17b141fea
         </div>
     </div>
 </footer>
-", "partials/footer.html.twig", "/home/grav/www/html/user/themes/agency/templates/partials/footer.html.twig");
+", "partials/footer.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/partials/footer.html.twig");
     }
 }

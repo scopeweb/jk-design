@@ -131,6 +131,6 @@ class __TwigTemplate_8ea40ec8601ac353648c1d1d86dfa439e9b247426173929d6cc9345c55e
     </div>
 </div>
 </section>
-", "modular/services.html.twig", "/home/grav/www/html/user/themes/agency/templates/modular/services.html.twig");
+", "modular/services.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/modular/services.html.twig");
     }
 }

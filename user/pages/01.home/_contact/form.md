@@ -2,7 +2,7 @@
 title: Contact Us
 ---
 
-## DROP ME A MESSAGE   
+## Drop me a message
 <br>
 <br>
-##    <a href="mailto:jklasecki@gmail.com">jklasecki@gmail.com</a>
+## <a href="mailto:jklasecki@gmail.com">E-MAIL</a>
