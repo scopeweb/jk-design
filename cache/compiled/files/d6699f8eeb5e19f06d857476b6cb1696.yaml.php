@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://agency/agency.yaml',
-    'modified' => 1514039488,
+    'modified' => 1514056198,
     'data' => [
         'enabled' => true,
         'color' => 'blue',

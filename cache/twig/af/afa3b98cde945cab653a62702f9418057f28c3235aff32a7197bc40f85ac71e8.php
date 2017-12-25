@@ -180,6 +180,6 @@ class __TwigTemplate_1c86eeb4a91c61ca1d9a85e263a1c0aa1fa518c7467422413b857fe559e
 {% endblock %}
 
 
-", "forms/fields/themeselect/themeselect.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/forms/fields/themeselect/themeselect.html.twig");
+", "forms/fields/themeselect/themeselect.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/forms/fields/themeselect/themeselect.html.twig");
     }
 }

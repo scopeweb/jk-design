@@ -209,6 +209,6 @@ class __TwigTemplate_1d9f6ad3d4dda46ba11d1568a3b7b8fad60b6656bc219c7f9c4f385d9d9
         </div>   
     </div>
 </div>
-</section>", "modular/about.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/modular/about.html.twig");
+</section>", "modular/about.html.twig", "/var/www/jkdesign.nu/public_web/user/themes/agency/templates/modular/about.html.twig");
     }
 }

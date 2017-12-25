@@ -304,6 +304,6 @@ array_key_exists("value", $context) && (($context["key"] == 1) || ($context["key
         {% endfor %}
     </div>
 {% endblock %}
-", "forms/fields/toggle/toggle.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/forms/fields/toggle/toggle.html.twig");
+", "forms/fields/toggle/toggle.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/forms/fields/toggle/toggle.html.twig");
     }
 }

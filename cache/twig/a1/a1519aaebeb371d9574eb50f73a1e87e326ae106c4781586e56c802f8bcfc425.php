@@ -98,6 +98,6 @@ class __TwigTemplate_5ca7c7398418725fa1029f6027b3f392667981fec6394d85c0e50730519
     </div>
 </div>
 {% endblock %}
-", "error.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/error.html.twig");
+", "error.html.twig", "/var/www/jkdesign.nu/public_web/user/themes/agency/templates/error.html.twig");
     }
 }

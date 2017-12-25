@@ -144,6 +144,6 @@ class __TwigTemplate_0b234bd3ebc7db054a8d2437c07e0eeba98e14fbe9484b42851130a1b6b
     {% include 'partials/modal-update-packages.html.twig' with { type: 'plugin' } %}
 
 {% endif %}
-", "partials/dashboard-maintenance.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/dashboard-maintenance.html.twig");
+", "partials/dashboard-maintenance.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/dashboard-maintenance.html.twig");
     }
 }

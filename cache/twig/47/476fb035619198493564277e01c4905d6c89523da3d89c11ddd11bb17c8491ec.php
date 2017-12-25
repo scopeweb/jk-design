@@ -108,6 +108,6 @@ class __TwigTemplate_c549679492d4b6bac23f3d3562a32f270d8aaf9694b6febfe6435747290
 
 
 
-", "partials/logo.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/logo.html.twig");
+", "partials/logo.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/logo.html.twig");
     }
 }

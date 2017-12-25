@@ -278,6 +278,6 @@ class __TwigTemplate_97365b1e9b3f50bc6f1d0bb2ce34948815857f32bb3aac340bec8cd709d
     </div>
 {% endblock %}
 
-", "forms/fields/pages/pages.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/forms/fields/pages/pages.html.twig");
+", "forms/fields/pages/pages.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/forms/fields/pages/pages.html.twig");
     }
 }

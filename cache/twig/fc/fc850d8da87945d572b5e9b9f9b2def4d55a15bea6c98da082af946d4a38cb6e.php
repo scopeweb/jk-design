@@ -88,6 +88,6 @@ class __TwigTemplate_883ec48a169c00af4f1b50cb077736435bec96cdcebd2550b6e2249b465
         </div>
     </a>
 </div>
-", "partials/nav-user-details.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/nav-user-details.html.twig");
+", "partials/nav-user-details.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/nav-user-details.html.twig");
     }
 }

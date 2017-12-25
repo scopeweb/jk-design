@@ -227,6 +227,6 @@ class __TwigTemplate_37a784e2eb27e76fd3e380a4fddf3f51c70a6070fc8b97a0a42c23818f1
 
 </body>
 </html>
-", "partials/base.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/partials/base.html.twig");
+", "partials/base.html.twig", "/var/www/jkdesign.nu/public_web/user/themes/agency/templates/partials/base.html.twig");
     }
 }

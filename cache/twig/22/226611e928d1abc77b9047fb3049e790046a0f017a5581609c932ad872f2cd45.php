@@ -370,6 +370,6 @@ class __TwigTemplate_2dc21cd9476cf8e3dc7fdbb5b2cbbc8196133dba0d98a1703ff4fb9b9ce
     {% endif %}
     {% include 'partials/modal-changes-detected.html.twig' %}
 {% endblock %}
-", "config.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/config.html.twig");
+", "config.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/config.html.twig");
     }
 }

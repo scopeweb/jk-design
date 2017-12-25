@@ -52,10 +52,7 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                     <a class=\"page-scroll\" href=\"#contact\">Contact</a>
                 </li>
                 <li>
-                    <a href=\"";
-            // line 34
-            echo ($context["base_url"] ?? null);
-            echo "/pl\">
+                    <a href=\"/pl\">
                         <img src=\"";
             // line 35
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-poland.png");
@@ -63,10 +60,7 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                     </a>
                 </li>
                 <li>
-                    <a href=\"";
-            // line 39
-            echo ($context["base_url"] ?? null);
-            echo "/en\">
+                    <a href=\"/en\">
                         <img src=\"";
             // line 40
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-english.png");
@@ -89,25 +83,19 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                     <a class=\"page-scroll\" href=\"#contact\">Kontakt</a>
                 </li>
                 <li>
-                    <a href=\"";
-            // line 57
-            echo ($context["base_url"] ?? null);
-            echo "/en\">
+                    <a href=\"/pl\">
                         <img src=\"";
             // line 58
-            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-english.png");
-            echo "\" alt=\"langswitcher EN\">
+            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-poland.png");
+            echo "\" alt=\"langswitcher PL\">
                     </a>
                 </li>
                 <li>
-                    <a href=\"";
-            // line 62
-            echo ($context["base_url"] ?? null);
-            echo "/pl\">
+                    <a href=\"/en\">
                         <img src=\"";
             // line 63
-            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-poland.png");
-            echo "\" alt=\"langswitcher PL\">
+            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/flags/flag-english.png");
+            echo "\" alt=\"langswitcher EN\">
                     </a>
                 </li>
                 ";
@@ -119,6 +107,7 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
     </div>
     <!-- /.container-fluid -->
 </nav>
+
 ";
     }
 
@@ -134,7 +123,7 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
 
     public function getDebugInfo()
     {
-        return array (  116 => 67,  109 => 63,  105 => 62,  98 => 58,  94 => 57,  79 => 44,  72 => 40,  68 => 39,  61 => 35,  57 => 34,  42 => 21,  40 => 20,  19 => 1,);
+        return array (  104 => 67,  97 => 63,  89 => 58,  73 => 44,  66 => 40,  58 => 35,  42 => 21,  40 => 20,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -180,12 +169,12 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                     <a class=\"page-scroll\" href=\"#contact\">Contact</a>
                 </li>
                 <li>
-                    <a href=\"{{ base_url }}/pl\">
+                    <a href=\"/pl\">
                         <img src=\"{{ url('theme://img/flags/flag-poland.png') }}\" alt=\"langswitcher PL\">
                     </a>
                 </li>
                 <li>
-                    <a href=\"{{ base_url }}/en\">
+                    <a href=\"/en\">
                         <img src=\"{{ url('theme://img/flags/flag-english.png') }}\" alt=\"langswitcher EN\">
                     </a>
                 </li>
@@ -203,13 +192,13 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
                     <a class=\"page-scroll\" href=\"#contact\">Kontakt</a>
                 </li>
                 <li>
-                    <a href=\"{{ base_url }}/en\">
-                        <img src=\"{{ url('theme://img/flags/flag-english.png') }}\" alt=\"langswitcher EN\">
+                    <a href=\"/pl\">
+                        <img src=\"{{ url('theme://img/flags/flag-poland.png') }}\" alt=\"langswitcher PL\">
                     </a>
                 </li>
                 <li>
-                    <a href=\"{{ base_url }}/pl\">
-                        <img src=\"{{ url('theme://img/flags/flag-poland.png') }}\" alt=\"langswitcher PL\">
+                    <a href=\"/en\">
+                        <img src=\"{{ url('theme://img/flags/flag-english.png') }}\" alt=\"langswitcher EN\">
                     </a>
                 </li>
                 {% endif %}
@@ -219,6 +208,7 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
     </div>
     <!-- /.container-fluid -->
 </nav>
-", "partials/navigation.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/partials/navigation.html.twig");
+
+", "partials/navigation.html.twig", "/var/www/jkdesign.nu/public_web/user/themes/agency/templates/partials/navigation.html.twig");
     }
 }

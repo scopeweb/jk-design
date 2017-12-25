@@ -103,6 +103,6 @@ class __TwigTemplate_4b7f03a82d4c54aff63aa9835da4c4706dd846a1edf28fc01a83fb5e5c8
         <div class=\"{{ message.scope|e }} alert\">{{ message.message|raw }}</div>
     {%- endfor -%}
 </div>
-", "partials/messages.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/messages.html.twig");
+", "partials/messages.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/messages.html.twig");
     }
 }

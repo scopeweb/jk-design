@@ -56,6 +56,6 @@ class __TwigTemplate_932331fffeb519926839e4f13d94a02dfe43c774f3f150d15a4ba7d0804
         return new Twig_Source("{% set value = (value is null ? (field.evaluate ? evaluate(field.default) : field.default) : value) %}
 
 <input data-grav-field=\"hidden\" data-grav-disabled=\"false\" type=\"hidden\" class=\"input\" name=\"{{ (scope ~ field.name)|fieldName }}\" value=\"{{ value|join(', ') }}\" />
-", "forms/fields/hidden/hidden.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/form/templates/forms/fields/hidden/hidden.html.twig");
+", "forms/fields/hidden/hidden.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/form/templates/forms/fields/hidden/hidden.html.twig");
     }
 }

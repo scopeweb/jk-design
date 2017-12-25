@@ -161,6 +161,6 @@ class __TwigTemplate_822ade639fd558e894e6900e7d592661fe8a7bd0d103beacb6bf289b4db
     {% endif %}
 
 {% endif %}
-", "forms/fields/section/section.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/forms/fields/section/section.html.twig");
+", "forms/fields/section/section.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/forms/fields/section/section.html.twig");
     }
 }

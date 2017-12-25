@@ -116,6 +116,6 @@ class __TwigTemplate_5fc0eb51837149f241f98b8165d82f0dde12d9e5a2abefb7fc7125f1c7d
         </div>
     </div>
 {% endif %}
-", "partials/dashboard-statistics.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/dashboard-statistics.html.twig");
+", "partials/dashboard-statistics.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/dashboard-statistics.html.twig");
     }
 }

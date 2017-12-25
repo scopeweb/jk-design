@@ -87,6 +87,6 @@ class __TwigTemplate_4b588198db7d7798fc97bd0b499cf32146eef814b9f44e62b53c73f246d
     type=\"text\"
     {{ parent() }}
 {% endblock %}
-", "forms/fields/selectize/selectize.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/forms/fields/selectize/selectize.html.twig");
+", "forms/fields/selectize/selectize.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/forms/fields/selectize/selectize.html.twig");
     }
 }

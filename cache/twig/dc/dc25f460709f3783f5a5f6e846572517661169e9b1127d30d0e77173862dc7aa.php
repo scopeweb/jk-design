@@ -272,6 +272,6 @@ class __TwigTemplate_c31ba5f95c7e0103bc67e0cf9788bbd6931bf72ef06c9adc6194c9a3669
         </div>
 
     </form>
-</div>", "partials/modal-add-package.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/modal-add-package.html.twig");
+</div>", "partials/modal-add-package.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/modal-add-package.html.twig");
     }
 }

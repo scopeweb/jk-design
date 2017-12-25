@@ -206,6 +206,6 @@ class __TwigTemplate_48353067b9fe5fd5b4d4bc43031e0cbc716b29faf1ef260c1d718c92431
 
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 </form>
-", "partials/blueprints.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/blueprints.html.twig");
+", "partials/blueprints.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/blueprints.html.twig");
     }
 }

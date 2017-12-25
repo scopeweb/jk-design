@@ -94,6 +94,6 @@ class __TwigTemplate_db2645c94c4dee64c75694df2248bb6da6a8a7ca8d87cde3deb60f0576b
     {% do assets.addCss(theme_url~'/css/nucleus-ie9.css') %}
     {% do assets.addCss(theme_url~'/css/pure-0.5.0/grids-min.css') %}
 {% endif %}
-", "partials/stylesheets.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/stylesheets.html.twig");
+", "partials/stylesheets.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/stylesheets.html.twig");
     }
 }
