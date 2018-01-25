@@ -75,6 +75,6 @@ class __TwigTemplate_cfe7ab4eb78891d80bae9849fb57e30fc095a129704b326fcddbdb344ba
     </div>
 </div>
 
-", "partials/dashboard-feed.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/dashboard-feed.html.twig");
+", "partials/dashboard-feed.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/dashboard-feed.html.twig");
     }
 }

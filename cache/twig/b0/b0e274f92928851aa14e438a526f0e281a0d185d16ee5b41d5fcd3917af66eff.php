@@ -96,6 +96,6 @@ class __TwigTemplate_bf46ed5f4ed5d5d36c4abd9c36efd508669095ef1c367f45a8fbb92641a
     </select>
     <div class=\"sort-icon\"><i class=\"fa fa-fw fa-sort-amount-asc\"></i></div>
 </div>
-", "partials/list-sort.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/list-sort.html.twig");
+", "partials/list-sort.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/list-sort.html.twig");
     }
 }

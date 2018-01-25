@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://admin/admin.yaml',
-    'modified' => 1514056198,
+    'modified' => 1516892663,
     'data' => [
         'enabled' => true,
         'route' => '/admin',

@@ -81,6 +81,6 @@ class __TwigTemplate_124417f26e800c70f255f7cda1ea5428013273f9ce88d61ca27ca75f4b7
 
 {% include 'partials/javascripts-extra.html.twig' ignore missing %}
 {% endif %}
-", "partials/javascripts.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/javascripts.html.twig");
+", "partials/javascripts.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/javascripts.html.twig");
     }
 }

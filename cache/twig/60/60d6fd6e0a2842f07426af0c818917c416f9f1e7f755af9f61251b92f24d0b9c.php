@@ -142,6 +142,6 @@ class __TwigTemplate_092129073b1f7b0ac93942bc9c6759f5332ac19f219e9d195e7d8eb8c14
     {% endfor %}
     </ul>
 {% endif %}
-", "partials/nav-quick-tray.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/nav-quick-tray.html.twig");
+", "partials/nav-quick-tray.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/nav-quick-tray.html.twig");
     }
 }

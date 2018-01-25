@@ -113,6 +113,6 @@ class __TwigTemplate_0c272394b7e5d07ad367b853bd9f4b85c86d1fbbe4ceb487913aa2d5a5a
         {{ module.content }}
     {% endfor %}
 {% endblock %}
-", "modular.html.twig", "/var/www/jkdesign.nu/public_web/user/themes/agency/templates/modular.html.twig");
+", "modular.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/modular.html.twig");
     }
 }

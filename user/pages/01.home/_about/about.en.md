@@ -28,4 +28,4 @@ abouts:
 ---
 
 ## About
-### Jacob Lasecki - _Designer_
+### Jakub Łasecki - _Designer_

@@ -13,8 +13,9 @@
     <a class="button" href="{{ base_url }}/user-manager"><i class="fa fa-reply"></i> {{ "PLUGIN_ADMIN.BACK"|tu }}</a>
     {% if exists %}
     <a class="button disable-after-click" href="{{ uri.addNonce(uri.route(true) ~ '/task' ~ ps ~ 'userDelete', 'admin-form', 'admin-nonce') }}" class="page-delete" ><i class="fa fa-close"></i> {{ "PLUGIN_ADMIN.DELETE"|tu }}</a>
+    <a class="button disable-after-click" href="{{ uri.addNonce(uri.route(true) ~ '/task' ~ ps ~ 'userLoginAs', 'admin-form', 'admin-nonce') }}"><i class="fa fa-sign-in"></i> {{ "PLUGIN_ADMIN_ADDON_USER_MANAGER.LOGIN_AS"|tu }}</a>
     {% endif %}
-    <button class="button" type="submit" name="task" value="admin-addon-user-manager-save" form="blueprints"><i class="fa fa-check"></i> {{ "PLUGIN_ADMIN.SAVE"|tu }}</button>
+    <button class="button" type="submit" name="task" value="save" form="blueprints"><i class="fa fa-check"></i> {{ "PLUGIN_ADMIN.SAVE"|tu }}</button>
   </div>
   <h1><i class="fa fa-fw fa-user"></i> {{ "PLUGIN_ADMIN.USER"|tu }}: {{ user.username|e }}</h1>
   {% endif %}
@@ -166,6 +167,18 @@
 
   {% include 'partials/blueprints.html.twig' with { data: user, blueprints: blueprints } %}
 
-  <script>$('button[type=submit]').on('click', function() { $(window).off('beforeunload'); });</script>
+  <div class="remodal" data-remodal-id="changes">
+    <form>
+      <h1>{{ "PLUGIN_ADMIN.MODAL_CHANGED_DETECTED_TITLE"|tu }}</h1>
+      <p class="bigger">
+        {{ "PLUGIN_ADMIN.MODAL_CHANGED_DETECTED_DESC"|tu }}
+      </p>
+      <br>
+      <div class="button-bar">
+        <a class="button secondary" data-leave-action="cancel" href="#"><i class="fa fa-fw fa-close"></i> {{ "PLUGIN_ADMIN.CANCEL"|tu }}</a>
+        <a class="button" data-leave-action="continue" href="#"><i class="fa fa-fw fa-check"></i> {{ "PLUGIN_ADMIN.CONTINUE"|tu }}</a>
+      </div>
+    </form>
+  </div>
   {% endif %}
 {% endblock %}

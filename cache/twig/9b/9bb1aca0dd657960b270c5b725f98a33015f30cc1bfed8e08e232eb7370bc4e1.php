@@ -209,6 +209,6 @@ class __TwigTemplate_803c591d0b3411b9e45e96fd63f951ccf3bc173b97bb954211d66e8b3f1
     <!-- /.container-fluid -->
 </nav>
 
-", "partials/navigation.html.twig", "/var/www/jkdesign.nu/public_web/user/themes/agency/templates/partials/navigation.html.twig");
+", "partials/navigation.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/partials/navigation.html.twig");
     }
 }

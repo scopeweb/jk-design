@@ -511,6 +511,6 @@ class __TwigTemplate_c5346edec5663fabeadfd268ad7a8c2450a1f545a6bba40c67c748225a9
     {% endblock body %}
     </html>
 {% endif %}
-", "partials/base-root.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/base-root.html.twig");
+", "partials/base-root.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/base-root.html.twig");
     }
 }

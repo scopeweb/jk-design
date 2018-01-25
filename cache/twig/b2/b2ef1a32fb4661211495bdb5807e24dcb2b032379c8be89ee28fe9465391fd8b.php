@@ -348,6 +348,6 @@ class __TwigTemplate_260097384eaa0012760c9b5c340f6da89f6e0ce8ef0ba8eaa69f635adc2
 
 {% include 'partials/modal-add-package.html.twig' with { type: 'plugin' } %}
 {% include 'partials/modal-update-packages.html.twig' with { type: 'plugin' } %}
-", "partials/plugins-list.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/plugins-list.html.twig");
+", "partials/plugins-list.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/plugins-list.html.twig");
     }
 }
