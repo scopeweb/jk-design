@@ -2,16 +2,16 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/jkdesign.nu/public_web/user/accounts/stephan.yaml',
-    'modified' => 1514212159,
+    'modified' => 1514217711,
     'data' => [
         'email' => 'stephan@kreynation.com',
         'access' => [
             'admin' => [
-                'login' => true,
-                'super' => true
+                'super' => 'true',
+                'login' => 'true'
             ],
             'site' => [
-                'login' => true
+                'login' => 'true'
             ]
         ],
         'fullname' => 'Stephan Moerman',
@@ -22,6 +22,7 @@ return [
         'login_attempts' => [
             
         ],
-        'twofa_secret' => 'HGJXHDK7XQWV7YUALPK5IO6HAVHBAA4O'
+        'twofa_secret' => '5OVMKDP7PF3AR6A2EYJ3MTI3GPSL45WU',
+        'twofa_enabled' => false
     ]
 ];

@@ -1,13 +1,13 @@
 ---
-title: Contact Us
+title: 'Contact Us'
 form:
     -
         namefield: Name
-        placeholdername: Enter your name
+        placeholdername: 'Enter your name'
         emailfield: Email
-        placeholderemail: Enter your email address
+        placeholderemail: 'Enter your email address'
         messagefield: Messages
-        placeholdermsg: Enter your message
+        placeholdermsg: 'Enter your message'
         btn: Submit
 ---
 

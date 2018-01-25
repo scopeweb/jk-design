@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1514209086,
-    'checksum' => '9509fae4b92178ca47d11619b4463201',
+    'timestamp' => 1514555609,
+    'checksum' => '4f3dda4aeef0dd8c4fdd54091c933996',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1514056198
+            ],
+            'plugins/admin-addon-user-manager' => [
+                'file' => 'user/config/plugins/admin-addon-user-manager.yaml',
+                'modified' => 1514555323
             ],
             'plugins/advanced-pagecache' => [
                 'file' => 'user/config/plugins/advanced-pagecache.yaml',
@@ -39,7 +43,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1514056198
+                'modified' => 1514216971
             ],
             'themes/agency' => [
                 'file' => 'user/config/themes/agency.yaml',
@@ -88,6 +92,10 @@ return [
             'plugins/advanced-pagecache' => [
                 'file' => 'user/plugins/advanced-pagecache/advanced-pagecache.yaml',
                 'modified' => 1514056198
+            ],
+            'plugins/admin-addon-user-manager' => [
+                'file' => 'user/plugins/admin-addon-user-manager/admin-addon-user-manager.yaml',
+                'modified' => 1514555319
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
@@ -171,6 +179,13 @@ return [
                 'blacklist' => [
                     0 => '/error',
                     1 => '/random'
+                ]
+            ],
+            'admin-addon-user-manager' => [
+                'enabled' => true,
+                'default_list_style' => 'list',
+                'pagination' => [
+                    'per_page' => '20'
                 ]
             ],
             'problems' => [

@@ -4,8 +4,7 @@ menu: About
 jakub:
     -
         img: jakub.jpg
-        description: Hello! I'm Jakub, a 19 year old IT student at University. <br> I am a self taught designer who is motivated to learn more. <br> All the knowledge I have is gained through countless of hours of study and motivation to get better. <br> My services include branding, graphics and other types of 2D designs, but all my free time <br> is spent learning new things such as 3D graphics and motion design.
-
+        description: 'Hello! I''m Jakub, a 20 year old IT student at University. <br> I am a self taught designer who is motivated to learn more. <br> All the knowledge I have is gained through countless of hours of study and motivation to get better. <br> My services include branding, graphics and other types of 2D designs, also all my free time <br> is spent learning new things such as 3D graphics.'
 abouts:
     -
         img: 1.png

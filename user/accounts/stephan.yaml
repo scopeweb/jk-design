@@ -11,5 +11,5 @@ state: enabled
 hashed_password: $2y$10$dfsU9kQZxbIQaLIyHtB0P.KX2SrxnTmWGTJXEqT2F5Q9Am1.bY2yW
 language: en
 login_attempts: {  }
-twofa_secret: HGJXHDK7XQWV7YUALPK5IO6HAVHBAA4O
+twofa_secret: 5OVMKDP7PF3AR6A2EYJ3MTI3GPSL45WU
 twofa_enabled: false

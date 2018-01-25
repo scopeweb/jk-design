@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1514056210,
-    'checksum' => 'fcdb9ada1ee6116b04ee297e8ae99205',
+    'timestamp' => 1514555319,
+    'checksum' => 'ec43cd6196ae8af86edf164493d24ee6',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -140,6 +140,12 @@ return [
             'en' => [
                 'file' => 'user/plugins/ganalytics/languages/en.yaml',
                 'modified' => 1514056198
+            ]
+        ],
+        'user/plugins/admin-addon-user-manager/languages' => [
+            'en' => [
+                'file' => 'user/plugins/admin-addon-user-manager/languages/en.yaml',
+                'modified' => 1514555319
             ]
         ],
         'user/plugins/admin/languages' => [
@@ -2027,6 +2033,22 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'FORCE_LOWERCASE_URLS_HELP' => 'By default grav will set all slugs and routes to be lowercase.  With this set to false, Uppercase slugs and routes can be used',
                 'INTL_ENABLED' => 'Intl module integration',
                 'INTL_ENABLED_HELP' => 'Use Intl PHP module and collate to sort UTF8 based collections'
+            ],
+            'PLUGIN_ADMIN_ADDON_USER_MANAGER' => [
+                'GROUP' => 'Group',
+                'READABLE_NAME' => 'Readable name',
+                'ICON' => 'Icon',
+                'ADD_GROUP' => 'Add Group',
+                'USERS' => 'Users',
+                'HELP' => 'Help',
+                'BULK_DELETE_USER' => 'Delete selected users',
+                'BULK_DELETE' => 'Delete',
+                'BULK_USER_GROUP' => 'Bulk user actions related to groups',
+                'BULK_ADD_GROUP' => 'Add selected users to selected groups',
+                'BULK_REMOVE_GROUP' => 'Remove selected users from selected groups',
+                'BULK_DELETE_GROUP' => 'Delete selected groups',
+                'BULK_ADD_PERMISSIONS' => 'Add selected permissions to selected',
+                'BULK_REMOVE_PERMISSIONS' => 'Remove selected permissions to selected users'
             ],
             'PLUGIN_GANALYTICS' => [
                 '_YES' => 'Yes',
@@ -22677,7 +22699,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => 'fcdb9ada1ee6116b04ee297e8ae99205',
-        'timestamp' => 1514056210
+        'checksum' => 'ec43cd6196ae8af86edf164493d24ee6',
+        'timestamp' => 1514555319
     ]
 ];

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1514056210,
-    'checksum' => '3802baca80789dbecc821681d4acd587',
+    'timestamp' => 1514555321,
+    'checksum' => '24bdd048968f5bb9722392bcf5a075e3',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -41,10 +41,6 @@ return [
                 'file' => 'user/plugins/langswitcher/blueprints.yaml',
                 'modified' => 1514056198
             ],
-            'plugins/gffi' => [
-                'file' => 'user/plugins/gffi/blueprints.yaml',
-                'modified' => 1514056198
-            ],
             'plugins/ganalytics' => [
                 'file' => 'user/plugins/ganalytics/blueprints.yaml',
                 'modified' => 1514056198
@@ -56,6 +52,10 @@ return [
             'plugins/advanced-pagecache' => [
                 'file' => 'user/plugins/advanced-pagecache/blueprints.yaml',
                 'modified' => 1514056198
+            ],
+            'plugins/admin-addon-user-manager' => [
+                'file' => 'user/plugins/admin-addon-user-manager/blueprints.yaml',
+                'modified' => 1514555319
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
@@ -2095,28 +2095,6 @@ return [
                 'name' => 'plugins.langswitcher.untranslated_pages_behavior',
                 'validation' => 'strict'
             ],
-            'plugins.gffi' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.gffi.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin status',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gffi.enabled',
-                'validation' => 'strict'
-            ],
             'plugins.ganalytics' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -2369,6 +2347,68 @@ return [
                 'value_only' => true,
                 'label' => 'Blacklist',
                 'name' => 'plugins.advanced-pagecache.blacklist',
+                'validation' => 'strict'
+            ],
+            'plugins.admin-addon-user-manager' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.admin-addon-user-manager.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.admin-addon-user-manager.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.admin-addon-user-manager.default_list_style' => [
+                'label' => 'Default list style',
+                'type' => 'select',
+                'options' => [
+                    'grid' => 'Grid',
+                    'list' => 'List'
+                ],
+                'name' => 'plugins.admin-addon-user-manager.default_list_style',
+                'validation' => 'strict'
+            ],
+            'plugins.admin-addon-user-manager.pagination' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin-addon-user-manager.pagination',
+                'form_field' => false
+            ],
+            'plugins.admin-addon-user-manager.pagination.per_page' => [
+                'label' => 'Users per page',
+                'type' => 'select',
+                'options' => [
+                    10 => 10,
+                    20 => 20,
+                    30 => 30,
+                    40 => 40,
+                    50 => 50,
+                    60 => 60,
+                    70 => 70,
+                    80 => 80,
+                    90 => 90,
+                    100 => 100
+                ],
+                'name' => 'plugins.admin-addon-user-manager.pagination.per_page',
+                'validation' => 'strict'
+            ],
+            'plugins.admin-addon-user-manager.custom_permissions' => [
+                'label' => 'Custom permissions',
+                'type' => 'array',
+                'value_only' => true,
+                'name' => 'plugins.admin-addon-user-manager.custom_permissions',
                 'validation' => 'strict'
             ],
             'plugins.problems' => [
@@ -3689,9 +3729,6 @@ return [
                     'built_in_css' => 'plugins.langswitcher.built_in_css',
                     'untranslated_pages_behavior' => 'plugins.langswitcher.untranslated_pages_behavior'
                 ],
-                'gffi' => [
-                    'enabled' => 'plugins.gffi.enabled'
-                ],
                 'ganalytics' => [
                     'enabled' => 'plugins.ganalytics.enabled',
                     'trackingId' => 'plugins.ganalytics.trackingId',
@@ -3715,6 +3752,14 @@ return [
                     'enabled_with_query' => 'plugins.advanced-pagecache.enabled_with_query',
                     'whitelist' => 'plugins.advanced-pagecache.whitelist',
                     'blacklist' => 'plugins.advanced-pagecache.blacklist'
+                ],
+                'admin-addon-user-manager' => [
+                    'enabled' => 'plugins.admin-addon-user-manager.enabled',
+                    'default_list_style' => 'plugins.admin-addon-user-manager.default_list_style',
+                    'pagination' => [
+                        'per_page' => 'plugins.admin-addon-user-manager.pagination.per_page'
+                    ],
+                    'custom_permissions' => 'plugins.admin-addon-user-manager.custom_permissions'
                 ],
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',

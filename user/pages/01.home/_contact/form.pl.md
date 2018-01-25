@@ -7,7 +7,7 @@ form:
         emailfield: Email
         placeholderemail: 'Wpisz swój e-mail'
         messagefield: Wiadomość
-        placeholdermsg: 'Wpisz swoją wiadomość'
+        placeholdermsg: 'Wpisz treść wiadomości'
         btn: Wyślij
 ---
 
