@@ -9,4 +9,4 @@ featured: header.jpg
 ---
 
 ## Your idea. My design.
-## Our success.
+## Our successes.
