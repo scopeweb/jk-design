@@ -1,122 +1,129 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1514555323,
-    'checksum' => '4f3dda4aeef0dd8c4fdd54091c933996',
+    'timestamp' => 1523667304,
+    'checksum' => '6e6f552936d03ef43654c62ef54588db',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ],
             'plugins/admin-addon-user-manager' => [
                 'file' => 'user/config/plugins/admin-addon-user-manager.yaml',
-                'modified' => 1514555323
+                'modified' => 1523667055
             ],
             'plugins/advanced-pagecache' => [
                 'file' => 'user/config/plugins/advanced-pagecache.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ],
             'plugins/ganalytics' => [
                 'file' => 'user/config/plugins/ganalytics.yaml',
-                'modified' => 1514209007
+                'modified' => 1523667055
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1514216971
+                'modified' => 1523667297
             ],
             'themes/agency' => [
                 'file' => 'user/config/themes/agency.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1514056197
+                'modified' => 1523667055
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1514056197
+                'modified' => 1523667055
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1514056197
+                'modified' => 1523667055
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1514056197
+                'modified' => 1523667055
             ]
         ],
         'user/plugins' => [
-            'plugins/email' => [
-                'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1514056198
-            ],
-            'plugins/error' => [
-                'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1514056198
-            ],
-            'plugins/langswitcher' => [
-                'file' => 'user/plugins/langswitcher/langswitcher.yaml',
-                'modified' => 1514056198
-            ],
-            'plugins/ganalytics' => [
-                'file' => 'user/plugins/ganalytics/ganalytics.yaml',
-                'modified' => 1514056198
-            ],
             'plugins/customadmin' => [
                 'file' => 'user/plugins/customadmin/customadmin.yaml',
-                'modified' => 1514056198
-            ],
-            'plugins/advanced-pagecache' => [
-                'file' => 'user/plugins/advanced-pagecache/advanced-pagecache.yaml',
-                'modified' => 1514056198
-            ],
-            'plugins/admin-addon-user-manager' => [
-                'file' => 'user/plugins/admin-addon-user-manager/admin-addon-user-manager.yaml',
-                'modified' => 1514555319
+                'modified' => 1523667055
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
             ],
-            'plugins/form' => [
-                'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1514056198
+            'plugins/email' => [
+                'file' => 'user/plugins/email/email.yaml',
+                'modified' => 1523667055
+            ],
+            'plugins/error' => [
+                'file' => 'user/plugins/error/error.yaml',
+                'modified' => 1523667055
+            ],
+            'plugins/admin-addon-user-manager' => [
+                'file' => 'user/plugins/admin-addon-user-manager/admin-addon-user-manager.yaml',
+                'modified' => 1523667055
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/langswitcher.yaml',
+                'modified' => 1523667055
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/plugins/ganalytics/ganalytics.yaml',
+                'modified' => 1523667055
+            ],
+            'plugins/form' => [
+                'file' => 'user/plugins/form/form.yaml',
+                'modified' => 1523667297
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1514056198
+                'modified' => 1523667055
+            ],
+            'plugins/advanced-pagecache' => [
+                'file' => 'user/plugins/advanced-pagecache/advanced-pagecache.yaml',
+                'modified' => 1523667055
             ]
         ]
     ],
     'data' => [
         'plugins' => [
+            'customadmin' => [
+                'enabled' => true
+            ],
+            'problems' => [
+                'enabled' => true,
+                'built_in_css' => true
+            ],
             'email' => [
                 'enabled' => true,
                 'from' => 'youngwebrebels@gmail.com',
@@ -145,71 +152,11 @@ return [
                     404 => '/error'
                 ]
             ],
-            'langswitcher' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'untranslated_pages_behavior' => 'none'
-            ],
-            'ganalytics' => [
-                'enabled' => true,
-                'trackingId' => 'UA-88974833-1',
-                'position' => 'head',
-                'objectName' => 'ga',
-                'forceSsl' => false,
-                'async' => false,
-                'anonymizeIp' => false,
-                'blockedIps' => [
-                    
-                ],
-                'cookieConfig' => false,
-                'cookieName' => '_ga',
-                'cookieDomain' => '',
-                'cookieExpires' => 63072000,
-                'debugStatus' => false,
-                'debugTrace' => false
-            ],
-            'customadmin' => [
-                'enabled' => true
-            ],
-            'advanced-pagecache' => [
-                'enabled' => true,
-                'enabled_with_params' => true,
-                'enabled_with_query' => true,
-                'whitelist' => false,
-                'blacklist' => [
-                    0 => '/error',
-                    1 => '/random'
-                ]
-            ],
             'admin-addon-user-manager' => [
                 'enabled' => true,
                 'default_list_style' => 'list',
                 'pagination' => [
                     'per_page' => '20'
-                ]
-            ],
-            'problems' => [
-                'enabled' => true,
-                'built_in_css' => true
-            ],
-            'form' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'refresh_prevention' => false,
-                'files' => [
-                    'multiple' => false,
-                    'limit' => 10,
-                    'destination' => 'self@',
-                    'avoid_overwriting' => false,
-                    'random_name' => false,
-                    'filesize' => 5,
-                    'accept' => [
-                        0 => 'image/*'
-                    ]
-                ],
-                'recaptcha' => [
-                    'site_key' => '6LfRXw4UAAAAALslBk0BZ1B3HuM2CMglzm5Hnhaq',
-                    'secret_key' => '6LfRXw4UAAAAAMpeA3szyg9gZO4HSL3-ZAl5hPQ-'
                 ]
             ],
             'admin' => [
@@ -246,10 +193,11 @@ return [
                     'delete_page' => true
                 ],
                 'edit_mode' => 'normal',
-                'frontend_pages_target' => '_blank',
+                'frontend_preview_target' => 'inline',
                 'show_github_msg' => true,
                 'pages_list_display_field' => 'title',
-                'google_fonts' => true,
+                'google_fonts' => false,
+                'admin_icons' => 'line-awesome',
                 'enable_auto_updates_check' => true,
                 'notifications' => [
                     'feed' => true,
@@ -270,12 +218,59 @@ return [
                     ]
                 ]
             ],
+            'langswitcher' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'untranslated_pages_behavior' => 'none'
+            ],
+            'ganalytics' => [
+                'enabled' => true,
+                'trackingId' => 'UA-88974833-1',
+                'position' => 'head',
+                'objectName' => 'ga',
+                'forceSsl' => false,
+                'async' => false,
+                'anonymizeIp' => false,
+                'blockedIps' => [
+                    
+                ],
+                'cookieConfig' => false,
+                'cookieName' => '_ga',
+                'cookieDomain' => '',
+                'cookieExpires' => 63072000,
+                'debugStatus' => false,
+                'debugTrace' => false
+            ],
+            'form' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'inline_css' => true,
+                'refresh_prevention' => false,
+                'client_side_validation' => true,
+                'inline_errors' => false,
+                'files' => [
+                    'multiple' => false,
+                    'limit' => 10,
+                    'destination' => 'self@',
+                    'avoid_overwriting' => false,
+                    'random_name' => false,
+                    'filesize' => 5,
+                    'accept' => [
+                        0 => 'image/*'
+                    ]
+                ],
+                'recaptcha' => [
+                    'site_key' => '6LfRXw4UAAAAALslBk0BZ1B3HuM2CMglzm5Hnhaq',
+                    'secret_key' => '6LfRXw4UAAAAAMpeA3szyg9gZO4HSL3-ZAl5hPQ-'
+                ]
+            ],
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
                 'route' => NULL,
                 'redirect_to_login' => true,
                 'redirect_after_login' => NULL,
+                'redirect_after_logout' => '/',
                 'route_activate' => '/activate_user',
                 'route_forgot' => '/forgot_password',
                 'route_reset' => '/reset_password',
@@ -295,7 +290,7 @@ return [
                 'max_login_count' => 0,
                 'max_login_interval' => 2,
                 'user_registration' => [
-                    'enabled' => true,
+                    'enabled' => false,
                     'fields' => [
                         0 => 'username',
                         1 => 'password',
@@ -316,11 +311,21 @@ return [
                     'options' => [
                         'validate_password1_and_password2' => true,
                         'set_user_disabled' => false,
-                        'login_after_registration' => true,
+                        'login_after_registration' => false,
                         'send_activation_email' => false,
                         'send_notification_email' => false,
                         'send_welcome_email' => false
                     ]
+                ]
+            ],
+            'advanced-pagecache' => [
+                'enabled' => true,
+                'enabled_with_params' => true,
+                'enabled_with_query' => true,
+                'whitelist' => false,
+                'blacklist' => [
+                    0 => '/error',
+                    1 => '/random'
                 ]
             ]
         ],
@@ -803,7 +808,7 @@ return [
                 'js_pipeline_include_externals' => true,
                 'js_pipeline_before_excludes' => true,
                 'js_minify' => true,
-                'enable_asset_timestamp' => false,
+                'enable_asset_timestamp' => true,
                 'collections' => [
                     'jquery' => 'system://assets/jquery/jquery-2.x.min.js'
                 ]
@@ -839,6 +844,7 @@ return [
             ],
             'session' => [
                 'enabled' => true,
+                'initialize' => true,
                 'timeout' => 1800,
                 'name' => 'grav-site',
                 'secure' => false,
