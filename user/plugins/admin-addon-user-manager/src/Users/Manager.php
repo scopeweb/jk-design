@@ -98,7 +98,7 @@ class Manager implements IManager, EventSubscriberInterface {
    */
   public function getNav() {
     return [
-      'label' => 'User Manager',
+      'label' => 'PLUGIN_ADMIN_ADDON_USER_MANAGER.USER_MANAGER',
       'location' => $this->getLocation(),
       'icon' => 'fa-user',
       'authorize' => $this->getRequiredPermission(),
@@ -130,7 +130,7 @@ class Manager implements IManager, EventSubscriberInterface {
     if ($method === 'taskUserDelete') {
       $username = $this->grav['uri']->paths()[2];
       if ($this->removeUser($username)) {
-        $this->grav->redirect($this->getLocation());
+        $this->adminController->setRedirect($this->getLocation());
       }
     } elseif ($method === 'taskUserLoginAs') {
       $username = $this->grav['uri']->paths()[2];
@@ -169,8 +169,16 @@ class Manager implements IManager, EventSubscriberInterface {
       if (isset($_POST['task']) && $_POST['task'] === 'admin-addon-user-manager-save') {
         $user = User::load($user);
         $post = $_POST['data'];
-        $user->merge($post);
-        $user->save();
+
+        try {
+          $user->merge($post);
+          $user->validate();
+          $user->filter();
+          $user->save();
+        } catch (\Exception $e) {
+          $this->grav['admin']->setMessage($e->getMessage(), 'error');
+        }
+
         $this->grav->redirect($this->plugin->getPreviousUrl());
       } else {
         $blueprints = new Blueprints;

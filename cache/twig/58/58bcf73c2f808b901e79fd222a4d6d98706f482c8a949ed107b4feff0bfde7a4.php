@@ -71,6 +71,6 @@ class __TwigTemplate_be0fa7e1d4f7de73b2c638000899e82c877086322d851e67c582b8ccdb5
         <ul></ul>
     </div>
 </div>
-", "partials/dashboard-notifications.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/partials/dashboard-notifications.html.twig");
+", "partials/dashboard-notifications.html.twig", "/mnt/c/programming/web/jkdesign-nu/user/plugins/admin/themes/grav/templates/partials/dashboard-notifications.html.twig");
     }
 }

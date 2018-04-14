@@ -151,6 +151,6 @@ class __TwigTemplate_aa8ef2a0d44575d981f4aa42e44cd4c25637607b5e255a0f9eb56959820
     </section>
 </body>
 {% endblock %}
-", "partials/login.html.twig", "/var/www/jkdesign.nu/public_web/user/plugins/admin/themes/grav/templates/partials/login.html.twig");
+", "partials/login.html.twig", "/mnt/c/programming/web/jkdesign-nu/user/plugins/admin/themes/grav/templates/partials/login.html.twig");
     }
 }

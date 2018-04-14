@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://advanced-pagecache/advanced-pagecache.yaml',
-    'modified' => 1516892664,
+    'modified' => 1523658959,
     'data' => [
         'enabled' => true,
         'enabled_with_params' => true,

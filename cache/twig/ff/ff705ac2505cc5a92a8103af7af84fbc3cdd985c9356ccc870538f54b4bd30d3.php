@@ -82,6 +82,6 @@ class __TwigTemplate_8c7329cc583083f169629651c220bdb4008ead29ff0a687a97c4cf90483
         return new Twig_Source("{% for meta in page.metadata %}
 <meta {% if meta.name %}name=\"{{ meta.name }}\" {% endif %}{% if meta.http_equiv %}http-equiv=\"{{ meta.http_equiv }}\" {% endif %}{% if meta.charset %}charset=\"{{ meta.charset }}\" {% endif %}{% if meta.property %}property=\"{{ meta.property }}\" {% endif %}{% if meta.content %}content=\"{{ meta.content }}\" {% endif %}/>
 {% endfor %}
-", "partials/metadata.html.twig", "/mnt/c/programming/web/jkdesign/user/themes/agency/templates/partials/metadata.html.twig");
+", "partials/metadata.html.twig", "/mnt/c/programming/web/jkdesign-nu/user/themes/agency/templates/partials/metadata.html.twig");
     }
 }

@@ -361,6 +361,6 @@ class __TwigTemplate_4abdb7c34d8af9dbf60c8de88512ec716ab62b6f564e361c2214d5595e1
         {%- endif -%}
     </div>
 {% endblock %}
-", "dashboard.html.twig", "/mnt/c/programming/web/jkdesign/user/plugins/admin/themes/grav/templates/dashboard.html.twig");
+", "dashboard.html.twig", "/mnt/c/programming/web/jkdesign-nu/user/plugins/admin/themes/grav/templates/dashboard.html.twig");
     }
 }
