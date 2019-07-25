@@ -11,6 +11,7 @@ use Grav\Common\GPM\Response;
 use Grav\Common\GPM\Upgrader;
 use Grav\Common\Filesystem\Folder;
 use Grav\Common\GPM\Common\Package;
+use Grav\Plugin\Admin\Admin;
 
 /**
  * Class Gpm
@@ -27,6 +28,9 @@ class Gpm
     {
         if (!static::$GPM) {
             static::$GPM = new GravGPM();
+            if (method_exists('GravGPM', 'loadRemoteGrav')) {
+                static::$GPM->loadRemoteGrav();
+            }
         }
 
         return static::$GPM;
@@ -50,7 +54,7 @@ class Gpm
      * @param Package[]|string[]|string $packages
      * @param array                     $options
      *
-     * @return string|bool
+     * @return bool
      */
     public static function install($packages, array $options)
     {
@@ -87,11 +91,11 @@ class Gpm
             // Check destination
             Installer::isValidDestination($options['destination'] . DS . $package->install_path);
 
-            if (!$options['overwrite'] && Installer::lastErrorCode() === Installer::EXISTS) {
+            if (Installer::lastErrorCode() === Installer::EXISTS && !$options['overwrite']) {
                 return false;
             }
 
-            if (!$options['ignore_symlinks'] && Installer::lastErrorCode() === Installer::IS_LINK) {
+            if (Installer::lastErrorCode() === Installer::IS_LINK && !$options['ignore_symlinks']) {
                 return false;
             }
 
@@ -125,7 +129,7 @@ class Gpm
      * @param Package[]|string[]|string $packages
      * @param array                     $options
      *
-     * @return string|bool
+     * @return bool
      */
     public static function update($packages, array $options)
     {
@@ -138,13 +142,13 @@ class Gpm
      * @param Package[]|string[]|string $packages
      * @param array                     $options
      *
-     * @return string|bool
+     * @return bool
      */
     public static function uninstall($packages, array $options)
     {
         $options = array_merge(self::$options, $options);
 
-        $packages = (array)$packages;
+        $packages = is_array($packages) ? $packages : [$packages];
         $count    = count($packages);
 
         $packages = array_filter(array_map(function ($p) {
@@ -196,9 +200,9 @@ class Gpm
     /**
      * Direct install a file
      *
-     * @param string $package_file
+     * @param $package_file
      *
-     * @return string|bool
+     * @return bool
      */
     public static function directInstall($package_file)
     {
@@ -309,10 +313,10 @@ class Gpm
         $tmp_dir = Admin::getTempDir() . '/Grav-' . uniqid('', false);
         Folder::mkdir($tmp_dir);
 
-        $bad_chars = array_merge(array_map('chr', range(0, 31)), ['<', '>', ':', '"', '/', '\\', '|', '?', '*']);
+        $bad_chars = array_merge(array_map('chr', range(0, 31)), ["<", ">", ":", '"', "/", "\\", "|", "?", "*"]);
 
-        $filename = $package->slug . str_replace($bad_chars, '', basename($package->zipball_url));
-        $filename = preg_replace('/[\\\\\/:"*?&<>|]+/m', '-', $filename);
+        $filename = $package->slug . str_replace($bad_chars, "", basename($package->zipball_url));
+        $filename = preg_replace('/[\\\\\/:"*?&<>|]+/mi', '-', $filename);
 
         file_put_contents($tmp_dir . DS . $filename . '.zip', $contents);
 
@@ -428,3 +432,4 @@ class Gpm
         }
     }
 }
+

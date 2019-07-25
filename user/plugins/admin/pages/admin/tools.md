@@ -1,5 +1,7 @@
 ---
 title: Grav Tools
+
 access:
-    admin.login: true
+    admin.tools: true
+    admin.super: true
 ---

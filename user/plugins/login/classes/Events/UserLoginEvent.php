@@ -1,18 +1,15 @@
 <?php
-
 /**
  * @package    Grav\Plugin\Login
  *
  * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
-
 namespace Grav\Plugin\Login\Events;
 
 use Grav\Common\Grav;
 use Grav\Common\Session;
-use Grav\Common\User\Interfaces\UserCollectionInterface;
-use Grav\Common\User\Interfaces\UserInterface;
+use Grav\Common\User\User;
 use RocketTheme\Toolbox\Event\Event;
 
 /**
@@ -24,7 +21,7 @@ use RocketTheme\Toolbox\Event\Event;
  * @property string|string[]    $authorize
  * @property array              $options
  * @property Session            $session
- * @property UserInterface      $user
+ * @property User               $user
  * @property string             $message
  *
  */
@@ -90,9 +87,7 @@ class UserLoginEvent extends Event
             $this->offsetSet('session', Grav::instance()['session']);
         }
         if (!$this->offsetExists('user')) {
-            /** @var UserCollectionInterface $users */
-            $users = Grav::instance()['accounts'];
-            $this->offsetSet('user', $users->load($this['credentials']['username']));
+            $this->offsetSet('user', User::load($this['credentials']['username']));
         }
     }
 
@@ -143,7 +138,7 @@ class UserLoginEvent extends Event
      */
     public function getCredential($name)
     {
-        return $this->items['credentials'][$name] ?? null;
+        return isset($this->items['credentials'][$name]) ? $this->items['credentials'][$name] : null;
     }
 
     /**
@@ -172,7 +167,7 @@ class UserLoginEvent extends Event
      */
     public function getOption($name)
     {
-        return $this->items['options'][$name] ?? null;
+        return isset($this->items['options'][$name]) ? $this->items['options'][$name] : null;
     }
 
     /**
@@ -196,7 +191,7 @@ class UserLoginEvent extends Event
     }
 
     /**
-     * @return UserInterface
+     * @return User
      */
     public function getUser()
     {
@@ -204,10 +199,10 @@ class UserLoginEvent extends Event
     }
 
     /**
-     * @param UserInterface $user
+     * @param User $user
      * @return $this
      */
-    public function setUser(UserInterface $user)
+    public function setUser(User $user)
     {
         $this->offsetSet('user', $user);
 
@@ -269,15 +264,15 @@ class UserLoginEvent extends Event
      */
     public function getRedirect()
     {
-        return $this->items['redirect'] ?? null;
+        return !empty($this->items['redirect']) ? (string)$this->items['redirect'] : null;
     }
 
     /**
-     * @return int
+     * @return string|null
      */
     public function getRedirectCode()
     {
-        return $this->items['redirect_code'] ?? 303;
+        return !empty($this->items['redirect_code']) ? (string)$this->items['redirect_code'] : 303;
     }
 
     /**

@@ -9,9 +9,17 @@
 {% block input %}
     <div class="form-display-wrapper {{ field.size }} {{ field.classes }}" {% if field.id is defined %}id="{{ field.id|e }}" {% endif %}>
         {% if field.markdown %}
-            {{ content|t|markdown|raw }}
+            {% if grav.twig.twig.filters['tu'] is defined %}
+                {{ content|tu|markdown|raw }}
+            {% else %}
+                {{ content|t|markdown|raw }}
+            {% endif %}
         {% else %}
-            {{ content|t|raw }}
+            {% if grav.twig.twig.filters['tu'] is defined %}
+                {{ content|tu|raw }}
+            {% else %}
+                {{ content|t|raw }}
+            {% endif %}
         {% endif %}
     </div>
 {% endblock %}

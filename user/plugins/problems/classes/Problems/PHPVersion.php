@@ -1,5 +1,4 @@
 <?php
-
 namespace Grav\Plugin\Problems;
 
 use Grav\Plugin\Problems\Base\Problem;
@@ -19,9 +18,9 @@ class PHPVersion extends Problem
     public function process()
     {
         $min_php_version = defined('GRAV_PHP_MIN') ? GRAV_PHP_MIN : '5.6.4';
-        $your_php_version = PHP_VERSION;
+        $your_php_version = phpversion();
 
-        $msg = 'Your PHP <strong>%s</strong> is %s than the minimum of <strong>%s</strong> required';
+        $msg = "Your PHP <strong>%s</strong> is %s than the minimum of <strong>%s</strong> required";
 
         // Check PHP version
         if (version_compare($your_php_version, $min_php_version, '<')) {

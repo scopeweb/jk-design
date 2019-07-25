@@ -1,12 +1,10 @@
 <?php
-
 /**
  * @package    Grav\Plugin\Login
  *
  * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
-
 namespace Grav\Plugin\Login;
 
 /**
@@ -58,7 +56,7 @@ class RateLimiter
             return false;
         }
 
-        return $this->maxCount && \count($this->getAttempts($key, $type)) > $this->maxCount;
+        return $this->maxCount && count($this->getAttempts($key, $type)) > $this->maxCount;
     }
 
     /**

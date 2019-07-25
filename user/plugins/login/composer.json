@@ -26,8 +26,7 @@
         "docs": "https://github.com/getgrav/grav-plugin-login/blob/master/README.md"
     },
     "require": {
-        "php": ">=7.1.3",
-        "ext-json": "*",
+        "php": ">=5.5.9",
         "birke/rememberme": "1.*",
         "robthree/twofactorauth": "^1.6",
         "bacon/bacon-qr-code": "^1.0"
@@ -35,11 +34,6 @@
     "autoload": {
         "psr-4": {
             "Grav\\Plugin\\Login\\": "classes/"
-        }
-    },
-    "config": {
-        "platform": {
-            "php": "7.1.3"
         }
     }
 }

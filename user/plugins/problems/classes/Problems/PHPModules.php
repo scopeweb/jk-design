@@ -1,5 +1,4 @@
 <?php
-
 namespace Grav\Plugin\Problems;
 
 use Grav\Common\Grav;
@@ -23,7 +22,7 @@ class PHPModules extends Problem
         $modules_success = [];
 
         // Check for PHP CURL library
-        $msg = 'PHP Curl (Data Transfer Library) is %s installed';
+        $msg = "PHP Curl (Data Transfer Library) is %s installed";
         if (function_exists('curl_version')) {
             $modules_success['curl'] = sprintf($msg, 'successfully');
         } else {
@@ -31,7 +30,7 @@ class PHPModules extends Problem
         }
 
         // Check for PHP Ctype library
-        $msg = 'PHP Ctype is %s installed';
+        $msg = "PHP Ctype is %s installed";
         if (function_exists('ctype_print')) {
             $modules_success['ctype'] = sprintf($msg, 'successfully');
         } else {
@@ -39,7 +38,7 @@ class PHPModules extends Problem
         }
 
         // Check for PHP Dom library
-        $msg = 'PHP DOM is %s installed';
+        $msg = "PHP DOM is %s installed";
         if (class_exists('DOMDocument')) {
             $modules_success['dom'] = sprintf($msg, 'successfully');
         } else {
@@ -47,14 +46,14 @@ class PHPModules extends Problem
         }
 
         // Check for GD library
-        $msg = 'PHP GD (Image Manipulation Library) is %s installed';
+        $msg = "PHP GD (Image Manipulation Library) is %s installed";
         if (defined('GD_VERSION') && function_exists('gd_info')) {
 
             $msg = $modules_success['gd'] = sprintf($msg, 'successfully');
 
             // Extra checks for Image support
             $ginfo = gd_info();
-            $gda = array('PNG Support', 'JPEG Support', 'FreeType Support', 'GIF Read Support');
+            $gda = array("PNG Support", "JPEG Support", "FreeType Support", "GIF Read Support");
             $gda_msg = '';
             $problems_found = false;
 
@@ -76,7 +75,7 @@ class PHPModules extends Problem
         }
 
         // Check for PHP MbString library
-        $msg = 'PHP Mbstring (Multibyte String Library) is %s installed';
+        $msg = "PHP Mbstring (Multibyte String Library) is %s installed";
         if (extension_loaded('mbstring')) {
             $modules_success['mbstring'] = sprintf($msg, 'successfully');
         } else {
@@ -84,15 +83,15 @@ class PHPModules extends Problem
         }
 
         // Check for PHP Open SSL library
-        $msg = 'PHP OpenSSL (Secure Sockets Library) is %s installed';
-        if (defined('OPENSSL_VERSION_TEXT') && extension_loaded('openssl')) {
+        $msg = "PHP OpenSSL (Secure Sockets Library) is %s installed";
+        if (extension_loaded('openssl') && defined('OPENSSL_VERSION_TEXT')) {
             $modules_success['openssl'] = sprintf($msg, 'successfully');
         } else {
             $modules_errors['openssl'] = sprintf($msg, 'required but not');
         }
 
         // Check for PHP XML library
-        $msg = 'PHP XML Library is %s installed';
+        $msg = "PHP XML Library is %s installed";
         if (extension_loaded('xml')) {
             $modules_success['xml'] = sprintf($msg, 'successfully');
         } else {
@@ -100,7 +99,7 @@ class PHPModules extends Problem
         }
 
         // Check for PHP Zip library
-        $msg = 'PHP Zip extension is %s installed';
+        $msg = "PHP Zip extension is %s installed";
         if (extension_loaded('zip')) {
             $modules_success['zip'] = sprintf($msg, 'successfully');
         } else {
@@ -109,7 +108,7 @@ class PHPModules extends Problem
 
         // Check Exif if enabled
         if (Grav::instance()['config']->get('system.media.auto_metadata_exif')) {
-            $msg = 'PHP Exif (Exchangeable Image File Format) is %s installed';
+            $msg = "PHP Exif (Exchangeable Image File Format) is %s installed";
             if (extension_loaded('exif')) {
                 $modules_success['exif'] = sprintf($msg, 'successfully');
             } else {

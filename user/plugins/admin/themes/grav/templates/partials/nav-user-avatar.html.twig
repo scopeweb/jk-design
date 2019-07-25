@@ -1,2 +1,1 @@
-{% set user_avatar = admin.user.getAvatarUrl() %}
-<img src="{{ '?' not in user_avatar ? user_avatar ~ '?s=80' : user_avatar }}" />
+<img src="{{ admin.user.avatarUrl() }}?s=47" />

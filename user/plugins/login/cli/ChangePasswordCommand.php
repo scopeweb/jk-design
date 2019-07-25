@@ -1,18 +1,19 @@
 <?php
-
 /**
  * @package    Grav\Plugin\Login
  *
  * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
-
 namespace Grav\Plugin\Console;
 
-use Grav\Common\User\Interfaces\UserCollectionInterface;
+use Grav\Common\Config\Config;
 use Grav\Console\ConsoleCommand;
 use Grav\Common\Grav;
+use Grav\Common\File\CompiledYamlFile;
+use Grav\Common\User\User;
 use Grav\Plugin\Login\Login;
+use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Helper\Helper;
 use Symfony\Component\Console\Question\Question;
@@ -81,16 +82,13 @@ class ChangePasswordCommand extends ConsoleCommand
         $this->output->writeln('<green>Changing User Password</green>');
         $this->output->writeln('');
 
-        /** @var UserCollectionInterface $users */
-        $users = $grav['accounts'];
-
         if (!$this->options['user']) {
             // Get username and validate
             $question = new Question('Enter a <yellow>username</yellow>: ');
-            $question->setValidator(function ($value) use ($users) {
+            $question->setValidator(function ($value) {
                 $this->validate('user', $value);
 
-                if (!$users->find($value, ['username'])->exists()) {
+                if (!User::find($value, ['username'])->exists()) {
                     throw new \RuntimeException('Username "' . $value . '" does not exist, please pick another username');
                 };
 
@@ -119,16 +117,24 @@ class ChangePasswordCommand extends ConsoleCommand
             $data['password'] = $this->options['password1'];
         }
 
-        $user = $users->load($username);
-        if (!$user->exists()) {
-            $this->output->writeln('<red>Failure</red> User <cyan>' . $username . '</cyan> does not exist!');
-            exit();
-        }
-        //Set the password field to new password
-        $user->set('password', $data['password']);
-        $user->save();
+        // Lowercase the username for the filename
+        $username = mb_strtolower($username);
 
-        $this->invalidateCache();
+        /** @var UniformResourceLocator $locator */
+        $locator = Grav::instance()['locator'];
+        
+        // Grab the account file and read in the information before setting the file (prevent setting erase)
+        $oldUserFile = CompiledYamlFile::instance($locator->findResource('account://' . $username . YAML_EXT, true, true));
+        $oldData = (array)$oldUserFile->content();
+        
+        //Set the password field to new password
+        $oldData['password'] = $data['password'];
+        
+        // Create user object and save it using oldData (with updated password)
+        $user = new User($oldData);
+        $file = CompiledYamlFile::instance($locator->findResource('account://' . $username . YAML_EXT, true, true));
+        $user->file($file);
+        $user->save();
 
         $this->output->writeln('');
         $this->output->writeln('<green>Success!</green> User <cyan>' . $username . '\'s</cyan> password changed.');

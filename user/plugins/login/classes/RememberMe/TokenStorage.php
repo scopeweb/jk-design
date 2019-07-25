@@ -1,12 +1,10 @@
 <?php
-
 /**
  * @package    Grav\Plugin\Login
  *
  * @copyright  Copyright (C) 2014 - 2018 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
-
 namespace Grav\Plugin\Login\RememberMe;
 
 use Grav\Common\File\CompiledYamlFile;
@@ -31,10 +29,9 @@ class TokenStorage implements StorageInterface
      * Constructor
      *
      * @param string    $path   Path to storage directory
-     * @param int       $timeout
      * @throws \InvalidArgumentException
      */
-    public function __construct($path = 'user-data://rememberme', $timeout = 604800)
+    public function __construct($path = 'user://data/rememberme', $timeout = 604800)
     {
         $this->path = Grav::instance()['locator']->findResource($path, true, true);
         $this->timeout = $timeout;

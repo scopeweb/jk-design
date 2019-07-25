@@ -1,5 +1,5 @@
 name: AdvancedPageCache
-version: 2.0.0
+version: 1.2.0
 description: "AdvancedPageCache turbo charges your site by statically caching pages."
 icon: dashboard
 author:
@@ -26,7 +26,7 @@ form:
       validate:
         type: bool
 
-    disabled_with_params:
+    enabled_with_params:
       type: toggle
       label: Enabled with Params
       highlight: 1
@@ -38,7 +38,7 @@ form:
         type: bool
       help: Enable if there are params set on this URI (eg. /color:blue)
 
-    disabled_with_query:
+    enabled_with_query:
       type: toggle
       label: Enabled with Query
       highlight: 1
@@ -50,28 +50,18 @@ form:
         type: bool
       help: Enable if there are query options set on this URI (eg. ?color=blue)
 
-    disabled_extensions:
-      type: selectize
-      size: large
-      placeholder: "e.g. rss, xml, json"
-      label: Disabled Extensions
-      help: URL extensions that should not be cached (e.g. for news feeds)
-      classes: fancy
-      validate:
-        type: commalist
-
     whitelist:
       type: array
       value_only: true
       label: Whitelist
-      help: "Enable the plugin only when calling these page paths (don't include prefix, but do include extension)"
+      help: "Enable the plugin only when calling these page paths"
       placeholder_key:
-      placeholder_value: /cache-this-route
+      placeholder_value: /whitelist-this-route
 
     blacklist:
       type: array
       value_only: true
       label: Blacklist
-      help: "Disable the plugin when calling these page paths (don't include language prefix, but do include extension)"
+      help: "Disable the plugin when calling these page paths"
       placeholder_key:
-      placeholder_value: /dont-cache-this-route
+      placeholder_value: /blacklist-this-route

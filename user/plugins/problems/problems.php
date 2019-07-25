@@ -1,7 +1,6 @@
 <?php
 namespace Grav\Plugin;
 
-use Composer\Autoload\ClassLoader;
 use Grav\Common\Plugin;
 use Grav\Common\Uri;
 use Grav\Plugin\Problems\Base\ProblemChecker;
@@ -18,23 +17,10 @@ class ProblemsPlugin extends Plugin
     public static function getSubscribedEvents()
     {
         return [
-            'onPluginsInitialized' => [
-                ['autoload', 100002],
-                ['onPluginsInitialized', 100001]
-            ],
+            'onPluginsInitialized' => ['onPluginsInitialized', 100001],
             'onFatalException' => ['onFatalException', 0],
             'onAdminGenerateReports' => ['onAdminGenerateReports', 0],
         ];
-    }
-
-    /**
-     * [onPluginsInitialized:100000] Composer autoload.
-     *
-     * @return ClassLoader
-     */
-    public function autoload()
-    {
-        return require __DIR__ . '/vendor/autoload.php';
     }
 
     public function onFatalException()
@@ -51,6 +37,8 @@ class ProblemsPlugin extends Plugin
 
     public function onPluginsInitialized()
     {
+        require __DIR__ . '/vendor/autoload.php';
+
         if (\defined('GRAV_CLI') || $this->isAdmin()) {
             return;
         }
@@ -61,7 +49,6 @@ class ProblemsPlugin extends Plugin
             // If no issues remain, save a state file in the cache
             if (!$this->problemsFound()) {
                 // delete any existing validated files
-                /** @var \SplFileInfo $fileInfo */
                 foreach (new \GlobIterator(CACHE_DIR . ProblemChecker::PROBLEMS_PREFIX . '*') as $fileInfo) {
                     @unlink($fileInfo->getPathname());
                 }
@@ -121,7 +108,7 @@ class ProblemsPlugin extends Plugin
 
     private function problemsFound()
     {
-        if (null === $this->checker) {
+        if (is_null($this->checker)) {
             $this->checker = new ProblemChecker();
         }
 
